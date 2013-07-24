@@ -1,13 +1,5 @@
-//
-//  AJAppDelegate.m
-//  DataModelDemo
-//
-//  Created by Jianwen on 13-7-24.
-//  Copyright (c) 2013年 Dark. All rights reserved.
-//
 
 #import "AJAppDelegate.h"
-
 #import "AJViewController.h"
 
 @implementation AJAppDelegate
@@ -16,7 +8,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[AJViewController alloc] initWithNibName:@"AJViewController" bundle:nil];
+    self.viewController = [[AJViewController alloc] init];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;

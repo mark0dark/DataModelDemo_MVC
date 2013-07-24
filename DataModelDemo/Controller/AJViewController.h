@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AJViewFirst.h"
 
 @interface AJViewController : UIViewController
+{
+    //view
+    AJViewFirst *_firstView;
+
+    //data
+    NSArray *_dataArray;
+}
 
 @end

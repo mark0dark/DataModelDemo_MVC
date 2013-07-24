@@ -16,8 +16,11 @@
 		A4340FFD179F661A00A0F14A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A4340FFC179F661A00A0F14A /* Default.png */; };
 		A4340FFF179F661A00A0F14A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A4340FFE179F661A00A0F14A /* Default@2x.png */; };
 		A4341001179F661A00A0F14A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A4341000179F661A00A0F14A /* Default-568h@2x.png */; };
-		A4341004179F661A00A0F14A /* AJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4341003179F661A00A0F14A /* AJViewController.m */; };
-		A4341007179F661A00A0F14A /* AJViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4341005179F661A00A0F14A /* AJViewController.xib */; };
+		A434102A179F6F9400A0F14A /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A4341029179F6F9400A0F14A /* DataModel.m */; };
+		A4341035179F709B00A0F14A /* AJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A434102F179F709B00A0F14A /* AJViewController.m */; };
+		A4341037179F709B00A0F14A /* AJViewFirst.m in Sources */ = {isa = PBXBuildFile; fileRef = A4341034179F709B00A0F14A /* AJViewFirst.m */; };
+		A434103E179F727800A0F14A /* AJNetService.m in Sources */ = {isa = PBXBuildFile; fileRef = A434103D179F727800A0F14A /* AJNetService.m */; };
+		A4341041179F732C00A0F14A /* AJList.m in Sources */ = {isa = PBXBuildFile; fileRef = A4341040179F732C00A0F14A /* AJList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,9 +37,16 @@
 		A4340FFC179F661A00A0F14A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		A4340FFE179F661A00A0F14A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		A4341000179F661A00A0F14A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		A4341002179F661A00A0F14A /* AJViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AJViewController.h; sourceTree = "<group>"; };
-		A4341003179F661A00A0F14A /* AJViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AJViewController.m; sourceTree = "<group>"; };
-		A4341006179F661A00A0F14A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AJViewController.xib; sourceTree = "<group>"; };
+		A4341028179F6F9400A0F14A /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
+		A4341029179F6F9400A0F14A /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
+		A434102E179F709B00A0F14A /* AJViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJViewController.h; sourceTree = "<group>"; };
+		A434102F179F709B00A0F14A /* AJViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJViewController.m; sourceTree = "<group>"; };
+		A4341033179F709B00A0F14A /* AJViewFirst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJViewFirst.h; sourceTree = "<group>"; };
+		A4341034179F709B00A0F14A /* AJViewFirst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJViewFirst.m; sourceTree = "<group>"; };
+		A434103C179F727800A0F14A /* AJNetService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJNetService.h; sourceTree = "<group>"; };
+		A434103D179F727800A0F14A /* AJNetService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJNetService.m; sourceTree = "<group>"; };
+		A434103F179F732C00A0F14A /* AJList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJList.h; sourceTree = "<group>"; };
+		A4341040179F732C00A0F14A /* AJList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJList.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +93,12 @@
 		A4340FF0179F661A00A0F14A /* DataModelDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A434103B179F727800A0F14A /* Network */,
+				A434101E179F6EC400A0F14A /* Model */,
+				A4341030179F709B00A0F14A /* View */,
+				A434102D179F709B00A0F14A /* Controller */,
 				A4340FF9179F661A00A0F14A /* AJAppDelegate.h */,
 				A4340FFA179F661A00A0F14A /* AJAppDelegate.m */,
-				A4341002179F661A00A0F14A /* AJViewController.h */,
-				A4341003179F661A00A0F14A /* AJViewController.m */,
-				A4341005179F661A00A0F14A /* AJViewController.xib */,
 				A4340FF1179F661A00A0F14A /* Supporting Files */,
 			);
 			path = DataModelDemo;
@@ -105,6 +116,44 @@
 				A4341000179F661A00A0F14A /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A434101E179F6EC400A0F14A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A4341028179F6F9400A0F14A /* DataModel.h */,
+				A4341029179F6F9400A0F14A /* DataModel.m */,
+				A434103F179F732C00A0F14A /* AJList.h */,
+				A4341040179F732C00A0F14A /* AJList.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A434102D179F709B00A0F14A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A434102E179F709B00A0F14A /* AJViewController.h */,
+				A434102F179F709B00A0F14A /* AJViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A4341030179F709B00A0F14A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A4341033179F709B00A0F14A /* AJViewFirst.h */,
+				A4341034179F709B00A0F14A /* AJViewFirst.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A434103B179F727800A0F14A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A434103C179F727800A0F14A /* AJNetService.h */,
+				A434103D179F727800A0F14A /* AJNetService.m */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,7 +212,6 @@
 				A4340FFD179F661A00A0F14A /* Default.png in Resources */,
 				A4340FFF179F661A00A0F14A /* Default@2x.png in Resources */,
 				A4341001179F661A00A0F14A /* Default-568h@2x.png in Resources */,
-				A4341007179F661A00A0F14A /* AJViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +224,11 @@
 			files = (
 				A4340FF7179F661A00A0F14A /* main.m in Sources */,
 				A4340FFB179F661A00A0F14A /* AJAppDelegate.m in Sources */,
-				A4341004179F661A00A0F14A /* AJViewController.m in Sources */,
+				A434102A179F6F9400A0F14A /* DataModel.m in Sources */,
+				A4341035179F709B00A0F14A /* AJViewController.m in Sources */,
+				A4341037179F709B00A0F14A /* AJViewFirst.m in Sources */,
+				A434103E179F727800A0F14A /* AJNetService.m in Sources */,
+				A4341041179F732C00A0F14A /* AJList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,14 +241,6 @@
 				A4340FF4179F661A00A0F14A /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		A4341005179F661A00A0F14A /* AJViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A4341006179F661A00A0F14A /* en */,
-			);
-			name = AJViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
